@@ -1,3 +1,4 @@
+import { Circle } from "../components/Circle";
 import { CutCornerButton } from "../components/CutCornerButton";
 import { Hexagon } from "../components/Hexagon";
 
@@ -27,22 +28,31 @@ export const HeroSection = () => {
               <Hexagon className="size-[1800px]" />
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="bg-zinc-900 size-[240px] inline-flex items-center justify-center rounded-full outline outline-[6px] -outline-offset-[6px] outline-fuchsia-500/10 absolute left-[200px] -top-[900px]">
+              <Circle className="absolute left-[200px] -top-[900px]">
                 <img
                   src="assets/images/cube.png"
                   alt="cube"
                   className="size-[140px]"
                 />
-              </div>
+              </Circle>
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="bg-zinc-900 size-[240px] inline-flex items-center justify-center rounded-full outline outline-[6px] -outline-offset-[6px] outline-fuchsia-500/10 absolute left-[200px] top-[270px]">
+              <Circle className="absolute left-[200px] top-[270px]">
                 <img
                   src="assets/images/cuboid.png"
                   alt="cuboid"
                   className="size-[140px]"
                 />
-              </div>
+              </Circle>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute -left-[600px] -top-[80px]">
+                <img
+                  src="assets/images/torus.png"
+                  alt="torus"
+                  className="size-[140px]"
+                />
+              </Circle>
             </div>
             <img
               src="/assets/images/icosahedron.png"
@@ -55,6 +65,14 @@ export const HeroSection = () => {
               className="w-[500px]"
             />
           </div>
+        </div>
+        <div className="flex justify-center flex-col items-center mt-40 md:mt-80 gap-4">
+          <div className="h-10 w-5 outline outline-[6px] outline-fuchsia-500/10 inline-flex justify-center pt-2 rounded-full">
+            <div className="h-3 w-1 bg-fuchsia-500 rounded-full"></div>
+          </div>
+          <p className="uppercase text-zinc-500 font-extrabold tracking-wider">
+            Scroll to learn more
+          </p>
         </div>
       </div>
     </section>
