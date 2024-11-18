@@ -5,7 +5,7 @@ export const LatestPosts = () => {
     <section className="py-60">
       <div className="container">
         <h2 className="font-heading font-black text-4xl text-center">
-          Your Portal to everything blockChain
+          Your Portal to everything BlockChain
         </h2>
         <p className="text-xl text-center text-zinc-400 mt-8">
           keep up with the newest trends, updates and insights in the blockchain
