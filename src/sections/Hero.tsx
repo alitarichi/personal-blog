@@ -116,7 +116,16 @@ export const HeroSection = () => {
         </div>
         <div className="flex justify-center flex-col items-center mt-40 md:mt-80 gap-4">
           <div className="h-10 w-5 outline outline-[6px] outline-fuchsia-500/10 inline-flex justify-center pt-2 rounded-full">
-            <div className="h-3 w-1 bg-fuchsia-500 rounded-full"></div>
+            <motion.div
+              animate={{ translateY: 12, opacity: 0.2 }}
+              transition={{
+                duration: 2,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="h-3 w-1 bg-fuchsia-500 rounded-full"
+            ></motion.div>
           </div>
           <p className="uppercase text-zinc-500 font-extrabold tracking-wider">
             Scroll to learn more
