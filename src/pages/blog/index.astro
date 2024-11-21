@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import { CutCornerButton } from "../../components/CutCornerButton";
 import { Hexagon } from "../../components/Hexagon";
 import DefaultLayout from "../../layouts/Default.astro";
-import { HeaderSection } from "../../sections/Header";
 import { Card } from "../../components/Card";
 import { Tag } from "../../components/Tag";
 import { getPostColorFromCategory } from "../../utils/postUtils";
@@ -18,7 +17,6 @@ const latestPost = posts[0];
 ---
 
 <DefaultLayout>
-  <HeaderSection client:load />
   <section class="py-60 relative overflow-x-clip">
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
       <Hexagon size={800} client:load duration={30} />
