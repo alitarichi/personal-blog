@@ -1,0 +1,1 @@
+import{j as s}from"./jsx-runtime.7faW4zRM.js";import{t as a}from"./bundle-mjs.dQMZEiOx.js";const c=e=>{const{className:o,children:r,color:t}=e;return s.jsx("button",{className:a("text-sm font-heading uppercase font-extrabold tracking-wider text-fuchsia-500",t==="lime"&&"text-lime-500",t==="cyan"&&"text-cyan-500",t==="violet"&&"text-violet-500",o),children:r})};export{c as T};
